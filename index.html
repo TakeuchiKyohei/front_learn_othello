@@ -3,6 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- boot strap適用 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
   <title>Othello</title>
   <title>Document</title>
 </head>
@@ -13,81 +17,105 @@
     </div>
     <div id="board">
       <div class="board-row">
-        <button type="button" class="square" data-row="0" data-col="0"></button>
-        <button type="button" class="square" data-row="0" data-col="1"></button>
-        <button type="button" class="square" data-row="0" data-col="2"></button>
-        <button type="button" class="square" data-row="0" data-col="3"></button>
-        <button type="button" class="square" data-row="0" data-col="4"></button>
-        <button type="button" class="square" data-row="0" data-col="5"></button>
-        <button type="button" class="square" data-row="0" data-col="6"></button>
+        <button type="button" class="btn btn-outline-dark square" data-row="0" data-col="0"></button>
+        <button type="button" class="btn btn-outline-dark square" data-row="0" data-col="1"></button>
+        <button type="button" class="btn btn-outline-dark square" data-row="0" data-col="2"></button>
+        <button type="button" class="btn btn-outline-dark square" data-row="0" data-col="3"></button>
+        <button type="button" class="btn btn-outline-dark square" data-row="0" data-col="4"></button>
+        <button type="button" class="btn btn-outline-dark square" data-row="0" data-col="5"></button>
+        <button type="button" class="btn btn-outline-dark square" data-row="0" data-col="6"></button>
+        <button type="button" class="btn btn-outline-dark square" data-row="0" data-col="7"></button>
       </div>
       <div class="board-row">
-        <button type="button" class="square" data-row="1" data-col="0"></button>
-        <button type="button" class="square" data-row="1" data-col="1"></button>
-        <button type="button" class="square" data-row="1" data-col="2"></button>
-        <button type="button" class="square" data-row="1" data-col="3"></button>
-        <button type="button" class="square" data-row="1" data-col="4"></button>
-        <button type="button" class="square" data-row="1" data-col="5"></button>
-        <button type="button" class="square" data-row="1" data-col="6"></button>
+        <button type="button" class="btn btn-outline-dark square" data-row="1" data-col="0"></button>
+        <button type="button" class="btn btn-outline-dark square" data-row="1" data-col="1"></button>
+        <button type="button" class="btn btn-outline-dark square" data-row="1" data-col="2"></button>
+        <button type="button" class="btn btn-outline-dark square" data-row="1" data-col="3"></button>
+        <button type="button" class="btn btn-outline-dark square" data-row="1" data-col="4"></button>
+        <button type="button" class="btn btn-outline-dark square" data-row="1" data-col="5"></button>
+        <button type="button" class="btn btn-outline-dark square" data-row="1" data-col="6"></button>
+        <button type="button" class="btn btn-outline-dark square" data-row="1" data-col="7"></button>
       </div>
       <div class="board-row">
-        <button type="button" class="square" data-row="2" data-col="0"></button>
-        <button type="button" class="square" data-row="2" data-col="1"></button>
-        <button type="button" class="square" data-row="2" data-col="2"></button>
-        <button type="button" class="square" data-row="2" data-col="3"></button>
-        <button type="button" class="square" data-row="2" data-col="4"></button>
-        <button type="button" class="square" data-row="2" data-col="5"></button>
-        <button type="button" class="square" data-row="2" data-col="6"></button>
+        <button type="button" class="btn btn-outline-dark square" data-row="2" data-col="0"></button>
+        <button type="button" class="btn btn-outline-dark square" data-row="2" data-col="1"></button>
+        <button type="button" class="btn btn-outline-dark square" data-row="2" data-col="2"></button>
+        <button type="button" class="btn btn-outline-dark square" data-row="2" data-col="3"></button>
+        <button type="button" class="btn btn-outline-dark square" data-row="2" data-col="4"></button>
+        <button type="button" class="btn btn-outline-dark square" data-row="2" data-col="5"></button>
+        <button type="button" class="btn btn-outline-dark square" data-row="2" data-col="6"></button>
+        <button type="button" class="btn btn-outline-dark square" data-row="2" data-col="7"></button>
       </div>
       <div class="board-row">
-        <button type="button" class="square" data-row="3" data-col="0"></button>
-        <button type="button" class="square" data-row="3" data-col="1"></button>
-        <button type="button" class="square" data-row="3" data-col="2"></button>
-        <button type="button" class="square" data-row="3" data-col="3"></button>
-        <button type="button" class="square" data-row="3" data-col="4"></button>
-        <button type="button" class="square" data-row="3" data-col="5"></button>
-        <button type="button" class="square" data-row="3" data-col="6"></button>
+        <button type="button" class="btn btn-outline-dark square" data-row="3" data-col="0"></button>
+        <button type="button" class="btn btn-outline-dark square" data-row="3" data-col="1"></button>
+        <button type="button" class="btn btn-outline-dark square" data-row="3" data-col="2"></button>
+        <button type="button" class="btn btn-outline-dark square" data-row="3" data-col="3"></button>
+        <button type="button" class="btn btn-outline-dark square" data-row="3" data-col="4"></button>
+        <button type="button" class="btn btn-outline-dark square" data-row="3" data-col="5"></button>
+        <button type="button" class="btn btn-outline-dark square" data-row="3" data-col="6"></button>
+        <button type="button" class="btn btn-outline-dark square" data-row="3" data-col="7"></button>
       </div>
       <div class="board-row">
-        <button type="button" class="square" data-row="4" data-col="0"></button>
-        <button type="button" class="square" data-row="4" data-col="1"></button>
-        <button type="button" class="square" data-row="4" data-col="2"></button>
-        <button type="button" class="square" data-row="4" data-col="3"></button>
-        <button type="button" class="square" data-row="4" data-col="4"></button>
-        <button type="button" class="square" data-row="4" data-col="5"></button>
-        <button type="button" class="square" data-row="4" data-col="6"></button>
+        <button type="button" class="btn btn-outline-dark square" data-row="4" data-col="0"></button>
+        <button type="button" class="btn btn-outline-dark square" data-row="4" data-col="1"></button>
+        <button type="button" class="btn btn-outline-dark square" data-row="4" data-col="2"></button>
+        <button type="button" class="btn btn-outline-dark square" data-row="4" data-col="3"></button>
+        <button type="button" class="btn btn-outline-dark square" data-row="4" data-col="4"></button>
+        <button type="button" class="btn btn-outline-dark square" data-row="4" data-col="5"></button>
+        <button type="button" class="btn btn-outline-dark square" data-row="4" data-col="6"></button>
+        <button type="button" class="btn btn-outline-dark square" data-row="4" data-col="7"></button>
       </div>
       <div class="board-row">
-        <button type="button" class="square" data-row="5" data-col="0"></button>
-        <button type="button" class="square" data-row="5" data-col="1"></button>
-        <button type="button" class="square" data-row="5" data-col="2"></button>
-        <button type="button" class="square" data-row="5" data-col="3"></button>
-        <button type="button" class="square" data-row="5" data-col="4"></button>
-        <button type="button" class="square" data-row="5" data-col="5"></button>
-        <button type="button" class="square" data-row="5" data-col="6"></button>
+        <button type="button" class="btn btn-outline-dark square" data-row="5" data-col="0"></button>
+        <button type="button" class="btn btn-outline-dark square" data-row="5" data-col="1"></button>
+        <button type="button" class="btn btn-outline-dark square" data-row="5" data-col="2"></button>
+        <button type="button" class="btn btn-outline-dark square" data-row="5" data-col="3"></button>
+        <button type="button" class="btn btn-outline-dark square" data-row="5" data-col="4"></button>
+        <button type="button" class="btn btn-outline-dark square" data-row="5" data-col="5"></button>
+        <button type="button" class="btn btn-outline-dark square" data-row="5" data-col="6"></button>
+        <button type="button" class="btn btn-outline-dark square" data-row="5" data-col="7"></button>
       </div>
       <div class="board-row">
-        <button type="button" class="square" data-row="6" data-col="0"></button>
-        <button type="button" class="square" data-row="6" data-col="1"></button>
-        <button type="button" class="square" data-row="6" data-col="2"></button>
-        <button type="button" class="square" data-row="6" data-col="3"></button>
-        <button type="button" class="square" data-row="6" data-col="4"></button>
-        <button type="button" class="square" data-row="6" data-col="5"></button>
-        <button type="button" class="square" data-row="6" data-col="6"></button>
+        <button type="button" class="btn btn-outline-dark square" data-row="6" data-col="0"></button>
+        <button type="button" class="btn btn-outline-dark square" data-row="6" data-col="1"></button>
+        <button type="button" class="btn btn-outline-dark square" data-row="6" data-col="2"></button>
+        <button type="button" class="btn btn-outline-dark square" data-row="6" data-col="3"></button>
+        <button type="button" class="btn btn-outline-dark square" data-row="6" data-col="4"></button>
+        <button type="button" class="btn btn-outline-dark square" data-row="6" data-col="5"></button>
+        <button type="button" class="btn btn-outline-dark square" data-row="6" data-col="6"></button>
+        <button type="button" class="btn btn-outline-dark square" data-row="6" data-col="7"></button>
       </div>
       <div class="board-row">
-        <button type="button" class="square" data-row="7" data-col="0"></button>
-        <button type="button" class="square" data-row="7" data-col="1"></button>
-        <button type="button" class="square" data-row="7" data-col="2"></button>
-        <button type="button" class="square" data-row="7" data-col="3"></button>
-        <button type="button" class="square" data-row="7" data-col="4"></button>
-        <button type="button" class="square" data-row="7" data-col="5"></button>
-        <button type="button" class="square" data-row="7" data-col="6"></button>
+        <button type="button" class="btn btn-outline-dark square" data-row="7" data-col="0"></button>
+        <button type="button" class="btn btn-outline-dark square" data-row="7" data-col="1"></button>
+        <button type="button" class="btn btn-outline-dark square" data-row="7" data-col="2"></button>
+        <button type="button" class="btn btn-outline-dark square" data-row="7" data-col="3"></button>
+        <button type="button" class="btn btn-outline-dark square" data-row="7" data-col="4"></button>
+        <button type="button" class="btn btn-outline-dark square" data-row="7" data-col="5"></button>
+        <button type="button" class="btn btn-outline-dark square" data-row="7" data-col="6"></button>
+        <button type="button" class="btn btn-outline-dark square" data-row="7" data-col="7"></button>
       </div>
     </div>
     <div id="controller">
-      <button type="button" id="btn-initialize">リセット</button>
+      <button type="button" class="btn btn-secondary" id="btn-initialize">リセット</button>
     </div>
   </div>
+  <!-- boot strap適用 -->
+  <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" 
+        crossorigin="anonymous">
+  </script>
+
+  <script
+			  src="https://code.jquery.com/jquery-3.7.1.min.js"
+			  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+			  crossorigin="anonymous">
+  </script>
+
+  <script	src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+  <script src="./app.js"></script>
 </body>
 </html>
