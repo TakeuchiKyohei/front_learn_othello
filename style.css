@@ -1,0 +1,56 @@
+body{
+  background:url(https://github.com/oasys-tech/Reversi-4/raw/main/background.jpg);
+}
+
+.container{
+  /* 文字サイズを0にすることでボタンの余白をなくす */
+  font-size: 0;
+}
+
+#title{
+  /* 配置を真ん中 */
+  text-align: center;
+
+  color: antiquewhite;
+}
+
+#board{
+  /* 上下に5文字分の余白 */
+  margin: 5rem auto;
+
+  /* サイズ変更 */
+  width: 40rem;
+  height: 40rem;
+
+  background-color: black;
+  outline: 1.5rem solid;
+  outline-color: black;
+}
+
+.square{
+  /* サイズ変更 */
+  width: 5rem;
+  height: 5rem;
+
+  background-color: green;
+  box-shadow: none !important;
+
+  font-size: 2.5rem;
+}
+
+.square[data-owner="black"]{
+  color: black;
+}
+.square[data-owner="white"]{
+  color: white;
+}
+
+.cant-select{
+  background-color: green !important;
+}
+
+#controller{
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+}
